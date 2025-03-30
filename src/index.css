@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 215 60% 92%;
+    --foreground: 250 50% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 250 50% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 250 50% 10%;
+
+    --primary: 260 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 60% 92%;
+    --muted-foreground: 250 20% 40%;
+
+    --accent: 280 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 350 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 85%;
+    --input: 215 30% 85%;
+    --ring: 260 80% 50%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 250 30% 10%;
+    --foreground: 0 0% 95%;
+
+    --card: 250 30% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 250 30% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 260 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 250 20% 20%;
+    --muted-foreground: 215 20% 75%;
+
+    --accent: 280 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 350 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 250 20% 25%;
+    --input: 250 20% 25%;
+    --ring: 260 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-purple-100 via-blue-100 to-indigo-100 text-foreground min-h-screen;
+  }
+}
+
+@layer components {
+  .weather-card {
+    @apply relative overflow-hidden bg-gradient-to-br from-white/80 to-white/60 backdrop-blur-md rounded-2xl shadow-lg border border-white/30 transition-all duration-300;
+  }
+  
+  .weather-card:hover {
+    @apply shadow-xl transform -translate-y-1;
+  }
+  
+  .glassmorphism {
+    @apply bg-gradient-to-br from-white/30 to-white/10 backdrop-blur-lg border border-white/20 shadow-lg;
+  }
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
