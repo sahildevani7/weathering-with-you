@@ -2,6 +2,8 @@
 
 A weather dashboard app that allows you to track weather conditions in multiple cities.
 
+<img width="1455" alt="wwu2" src="https://github.com/user-attachments/assets/0e40600c-c695-448e-8eb8-7e450ecec64c" />
+
 ## Features
 
 - Add and track weather for multiple cities
